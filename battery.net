@@ -1,0 +1,41 @@
+(export (version D)
+  (design
+    (source C:\Users\alber\Desktop\battery\battery.sch)
+    (date "28.03.2019 16:57:57")
+    (tool "Eeschema (5.0.0)")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source battery.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref U1)
+      (value SMTU2032)
+      (footprint BATTERY_HOLDER:SMTU2032)
+      (libsource (lib Battery_Holder) (part SMTU2032) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C9BF70A)))
+  (libparts
+    (libpart (lib Battery_Holder) (part SMTU2032)
+      (footprints
+        (fp SMTU2032))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) SMTU2032))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name -) (type passive)))))
+  (libraries
+    (library (logical Battery_Holder)
+      (uri C:/Users/alber/Desktop/battery/Battery_Holder.lib)))
+  (nets
+    (net (code 1) (name +3V3)
+      (node (ref U1) (pin 1)))
+    (net (code 2) (name GND)
+      (node (ref U1) (pin 2)))))
